@@ -1,0 +1,24 @@
+{
+    "name": "storyteq/storyteq-api-php",
+    "description": "StoryTEQ API client for PHP",
+    "keywords": ["storyteq", "storymail", "php"],
+    "license": "DBAD",
+    "authors": [
+        {
+            "name": "Jeffrey van Hees",
+            "email": "jeffrey@fance.nl"
+        }
+    ],
+    "type": "project",
+    "require": {
+		"php": ">=5.4"
+    },
+	"require-dev": {
+		"phpunit/phpunit": "5.2.*"
+    },
+	"autoload": {
+        "psr-4": {
+            "StoryTEQ\\Template\\": "src/"
+        }
+    }
+}
