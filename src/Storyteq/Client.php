@@ -116,6 +116,15 @@ class Client
     }
 
     /**
+     * @param  [type] $mediaId       [description]
+     * @return [type]                [description]
+     */
+    public function readMedia($mediaId)
+    {
+        return $this->getRequest('content/media/'.$mediaId);
+    }
+
+    /**
      * @param  [type] $templateId [description]
      * @param  [type] $name       [description]
      * @return [type]             [description]
