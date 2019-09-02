@@ -2,6 +2,7 @@
     "name": "storyteq/storyteq-api-php",
     "description": "A PHP client to interact with endpoints on the Storyteq API.",
     "type": "library",
+    "version" : "0.0.1",
     "require": {
         "guzzlehttp/guzzle": "^6.3"
     },
