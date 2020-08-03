@@ -149,6 +149,18 @@ class Client
     }
 
     /**
+     * Undocumented function
+     *
+     * @param [type] $batchId
+     * @param integer $limit
+     * @return void
+     */
+    public function readBatchMedia($batchId, $limit = 100)
+    {
+        return $this->getRequest('content/batches/'.$batchId.'/media?limit='.$limit);
+    }
+
+    /**
      * @param [type] $mediaId
      * @param [type] $type
      * @return void
