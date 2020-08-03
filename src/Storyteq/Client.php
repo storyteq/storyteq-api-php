@@ -125,10 +125,10 @@ class Client
     }
 
     /**
-     * @param  [type] $templateId [description]
-     * @param  [type] $name       [description]
-     * @return [type]             [description]
-     */
+    * @param  [type] $templateId [description]
+    * @param  [type] $name       [description]
+    * @return [type]             [description]
+    */
     public function createBatch($templateId, $name)
     {
         $body = [
@@ -136,6 +136,16 @@ class Client
         ];
 
         return $this->postRequest('content/templates/'.$templateId.'/batches', $body);
+    }
+
+    /**
+     * @param [type] $batchId
+     * @param [type] $body
+     * @return void
+     */
+    public function createBatchMedia($batchId, $body)
+    {
+        return $this->postRequest('content/batches/'.$batchId.'/media', $body);
     }
 
     /**
